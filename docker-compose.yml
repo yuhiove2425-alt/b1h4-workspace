@@ -1,0 +1,22 @@
+services:
+  workspace:
+    build: .
+    container_name: b1h4-workspace
+    restart: unless-stopped
+    ports:
+      # 왼쪽이 서버 포트, 오른쪽이 컨테이너 포트입니다.
+      # Cloudflare Tunnel을 쓸 경우 "127.0.0.1:4000:4000"으로 바꾸면
+      # 외부에서 포트로 직접 들어오는 길이 막혀 더 안전합니다.
+      - "4000:4000"
+    environment:
+      PORT: 4000
+      DATA_DIR: /data
+      # 아래 값은 .env 파일에서 읽어 옵니다. 반드시 직접 정하세요.
+      SESSION_SECRET: ${SESSION_SECRET:?SESSION_SECRET을 .env에 설정하세요}
+      # 도메인/HTTPS를 프록시(Cloudflare Tunnel, Caddy 등)가 처리할 때 1
+      TRUST_PROXY: "1"
+      SECURE_COOKIE: "1"
+      TZ: Asia/Seoul
+    volumes:
+      # 팀 데이터(db.json, 백업)가 실제로 남는 곳입니다.
+      - ./data:/data

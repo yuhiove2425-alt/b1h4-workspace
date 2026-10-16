@@ -1,0 +1,493 @@
+{
+  "id": "project-proposal",
+  "name": "1.2 프로젝트 기획서",
+  "desc": "기획발표용 · 배경 · 시장분석 · 개발내용 · 일정",
+  "icon": "story",
+  "source": "1.2._프로젝트기획서_실전(기획발표용)_(예시).pdf",
+  "layout": {
+    "cover": {
+      "title": "프로젝트 기획서",
+      "lines": [
+        {
+          "label": "과제명 :",
+          "key": "subject",
+          "multiline": true,
+          "fallback": "firstLine",
+          "keywords": [
+            "과제명",
+            "주제명",
+            "프로젝트명",
+            "제목"
+          ],
+          "maxLines": 2
+        },
+        {
+          "key": "coverDate",
+          "context": "today",
+          "keywords": [
+            "작성일",
+            "날짜",
+            "일자"
+          ]
+        }
+      ]
+    },
+    "title": "프로젝트 기획서",
+    "columns": [
+      82,
+      112,
+      112,
+      156
+    ],
+    "rows": [
+      {
+        "h": 27,
+        "cells": [
+          {
+            "label": "팀명",
+            "span": 1
+          },
+          {
+            "key": "teamName",
+            "span": 3,
+            "context": "teamName",
+            "keywords": [
+              "팀명",
+              "팀 명"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 59,
+        "cells": [
+          {
+            "label": "팀원 및 역할",
+            "span": 1
+          },
+          {
+            "key": "members",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "팀원 및 역할",
+              "팀원",
+              "구성원"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 19,
+        "cells": [
+          {
+            "label": "주제 구분",
+            "span": 1
+          },
+          {
+            "key": "category",
+            "span": 1,
+            "placeholder": "기업 / 자율",
+            "keywords": [
+              "주제 구분",
+              "구분"
+            ]
+          },
+          {
+            "label": "기업명 / 멘토명",
+            "span": 1
+          },
+          {
+            "key": "company",
+            "span": 1,
+            "keywords": [
+              "기업명",
+              "멘토명",
+              "멘토"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 33,
+        "cells": [
+          {
+            "label": "아이디어 주제",
+            "span": 1
+          },
+          {
+            "key": "idea",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "아이디어 주제",
+              "아이디어",
+              "주제",
+              "서비스 개요",
+              "한 줄 요약",
+              "컨셉"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 180,
+        "cells": [
+          {
+            "label": "제안 배경 및\n필요성",
+            "span": 1
+          },
+          {
+            "key": "background",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "제안 배경 및 필요성",
+              "제안 배경",
+              "제안배경",
+              "필요성",
+              "배경",
+              "문제",
+              "문제 정의",
+              "문제정의",
+              "추진 배경",
+              "도입 배경",
+              "현황",
+              "개요",
+              "why"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 110,
+        "cells": [
+          {
+            "label": "유사 제품 현황\n및 비교",
+            "span": 1
+          },
+          {
+            "key": "similar",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "유사 제품 현황 및 비교",
+              "유사 제품",
+              "경쟁 서비스",
+              "유사 서비스",
+              "경쟁사",
+              "벤치마킹",
+              "시장 조사",
+              "비교"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 60,
+        "cells": [
+          {
+            "label": "제안 내용\n(개발 목표)",
+            "span": 1
+          },
+          {
+            "key": "goal",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "개발 목표",
+              "제안 내용",
+              "목표",
+              "기대 효과",
+              "달성 목표",
+              "핵심 목표"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 110,
+        "cells": [
+          {
+            "label": "개발 내용",
+            "span": 1
+          },
+          {
+            "key": "content",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "개발 내용",
+              "주요 기능",
+              "기능 목록",
+              "구현 내용",
+              "핵심 기능",
+              "서비스 구성"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 90,
+        "cells": [
+          {
+            "label": "수행 방법",
+            "span": 1
+          },
+          {
+            "key": "method",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "수행 방법",
+              "수행방법",
+              "데이터 확보 방안",
+              "추진 방법",
+              "구현 방법",
+              "기술 스택",
+              "아키텍처",
+              "시스템 구성",
+              "데이터 확보"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "(1) 제안 배경 - 외부 환경 분석 (PEST / STEEP)"
+      },
+      {
+        "h": 60,
+        "cells": [
+          {
+            "label": "기술적 배경",
+            "span": 1
+          },
+          {
+            "key": "pestTech",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "기술적 배경",
+              "기술 동향",
+              "기술 트렌드"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 60,
+        "cells": [
+          {
+            "label": "사회·경제적 배경",
+            "span": 1
+          },
+          {
+            "key": "pestSocial",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "사회·경제적 배경",
+              "사회적 배경",
+              "경제적 배경",
+              "사회 경제",
+              "시장 환경"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "(2) 시장 분석"
+      },
+      {
+        "h": 80,
+        "cells": [
+          {
+            "label": "국내시장\n규모 및 현황",
+            "span": 1
+          },
+          {
+            "key": "marketDomestic",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "국내시장 규모 및 현황",
+              "국내 시장",
+              "시장 규모",
+              "시장 현황",
+              "타겟 시장"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "(3) STP 전략"
+      },
+      {
+        "h": 45,
+        "cells": [
+          {
+            "label": "시장 세분화\nSegmentation",
+            "span": 1
+          },
+          {
+            "key": "stpS",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "시장 세분화",
+              "segmentation"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 45,
+        "cells": [
+          {
+            "label": "표적 시장\nTargeting",
+            "span": 1
+          },
+          {
+            "key": "stpT",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "표적 시장",
+              "targeting"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 45,
+        "cells": [
+          {
+            "label": "포지셔닝\nPositioning",
+            "span": 1
+          },
+          {
+            "key": "stpP",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "포지셔닝",
+              "positioning"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "(4) 필요성"
+      },
+      {
+        "h": 80,
+        "cells": [
+          {
+            "label": "필요성",
+            "span": 1
+          },
+          {
+            "key": "necessity",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "필요성",
+              "기대 효과",
+              "효과",
+              "의의"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "(6) 개발 일정"
+      },
+      {
+        "h": 20,
+        "header": true,
+        "cells": [
+          {
+            "label": "단계",
+            "span": 1
+          },
+          {
+            "label": "추진 내용",
+            "span": 1
+          },
+          {
+            "label": "기간",
+            "span": 1
+          },
+          {
+            "label": "담당",
+            "span": 1
+          }
+        ]
+      },
+      {
+        "h": 22,
+        "repeat": "schedule",
+        "minRows": 5,
+        "cells": [
+          {
+            "key": "phase",
+            "span": 1,
+            "for": "단계"
+          },
+          {
+            "key": "task",
+            "span": 1,
+            "for": "추진 내용"
+          },
+          {
+            "key": "period",
+            "span": 1,
+            "for": "기간"
+          },
+          {
+            "key": "owner",
+            "span": 1,
+            "for": "담당"
+          }
+        ]
+      },
+      {
+        "title": "(8) 참여 인원"
+      },
+      {
+        "h": 20,
+        "header": true,
+        "cells": [
+          {
+            "label": "이름",
+            "span": 1
+          },
+          {
+            "label": "역할 및 능력",
+            "span": 3
+          }
+        ]
+      },
+      {
+        "h": 30,
+        "repeat": "people",
+        "minRows": 6,
+        "cells": [
+          {
+            "key": "name",
+            "span": 1,
+            "for": "이름",
+            "context": "roster"
+          },
+          {
+            "key": "role",
+            "span": 3,
+            "for": "역할 및 능력",
+            "multiline": true,
+            "align": "left"
+          }
+        ]
+      }
+    ]
+  }
+}

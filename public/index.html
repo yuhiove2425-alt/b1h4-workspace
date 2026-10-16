@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#DCEEFF">
+<meta name="description" content="B1H4 팀을 위한 macOS 스타일 협업 워크스페이스">
+<title>B1H4 Workspace</title>
+<script>
+(function () {
+  try {
+    var saved = localStorage.getItem('b1h4.theme');
+    var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) { /* noop */ }
+})();
+</script>
+<link rel="stylesheet" href="/css/style.css?v=20260820-5">
+<link rel="stylesheet" href="/deliverables/deliverables.css">
+<link rel="icon" href="/img/logo.png">
+</head>
+<body>
+
+<div class="auth-screen" id="authScreen">
+  <div class="auth-card">
+    <div class="brand-mark">
+      <div class="brand-tile"><img src="/img/logo.png" alt="B1H4"></div>
+      <div>
+        <div class="brand-name" id="authBrandName">B1H4 Workspace</div>
+        <div class="brand-sub">팀 계획과 작업을 한곳에서</div>
+      </div>
+    </div>
+
+    <div class="seg" id="authSeg">
+      <button data-mode="login" class="on">로그인</button>
+      <button data-mode="register">팀 합류</button>
+    </div>
+
+    <div id="authAlert"></div>
+
+    <form id="authForm" autocomplete="on">
+      <div class="field" id="fTeamNameWrap" style="display:none">
+        <label for="fTeamName">팀 이름</label>
+        <input class="input" id="fTeamName" name="teamName" placeholder="B1H4" value="B1H4">
+      </div>
+
+      <div class="field">
+        <label for="fUsername">아이디</label>
+        <input class="input" id="fUsername" name="username" autocomplete="username" placeholder="영문 또는 숫자">
+      </div>
+
+      <div class="field" id="fNameWrap" style="display:none">
+        <label for="fName">이름</label>
+        <input class="input" id="fName" name="name" placeholder="팀원에게 표시될 이름">
+      </div>
+
+      <div class="field" id="fTeamCodeWrap" style="display:none">
+        <label for="fTeamCode">초대 코드</label>
+        <input class="input" id="fTeamCode" name="teamCode" placeholder="팀장에게 받은 8자리 코드" style="text-transform:uppercase" maxlength="8">
+      </div>
+
+      <div class="field">
+        <label for="fPassword">비밀번호</label>
+        <input class="input" id="fPassword" name="password" type="password" autocomplete="current-password" placeholder="4자 이상">
+      </div>
+
+      <button class="btn btn-primary btn-full" id="authSubmit" type="submit">로그인</button>
+    </form>
+
+    <div class="auth-note" id="authNote"></div>
+  </div>
+</div>
+
+<div class="app" id="app">
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <div class="page-title" id="pageTitle">홈</div>
+        <div class="page-sub" id="pageSub"></div>
+      </div>
+      <div class="topbar-spacer"></div>
+      <div class="presence-wrap">
+        <button class="presence" id="presence" aria-label="접속 중인 팀원 보기"></button>
+        <div class="panel presence-drop" id="presenceDrop"></div>
+      </div>
+      <div class="search-wrap">
+        <span id="searchIcon"></span>
+        <input id="searchInput" placeholder="작업 검색" aria-label="작업 검색">
+      </div>
+      <button class="icon-btn" id="btnBell" aria-label="알림"></button>
+      <button class="icon-btn" id="btnCreate" aria-label="새 작업" title="새 작업"></button>
+    </header>
+
+    <section id="view"></section>
+  </main>
+
+  <aside class="sidebar" id="workspacePanel">
+    <div class="brand-mark">
+      <button class="brand-tile" id="btnLogoExpand" data-logo-expand="1" aria-label="사이드바 펼치기"><img src="/img/logo.png" alt="B1H4"></button>
+      <div class="brand-text">
+        <div class="brand-name" id="sidebarTeamName">B1H4</div>
+        <div class="brand-sub">Workspace</div>
+      </div>
+      <button class="sidebar-collapse-btn" id="btnSidebarCollapse" data-sidebar-collapse="1" aria-label="사이드바 접기/펴기"></button>
+    </div>
+
+    <nav class="nav" id="nav"></nav>
+
+    <div class="sidebar-org">
+      <div class="sidebar-org-title">팀 조직도</div>
+      <div id="sidebarOrg"></div>
+    </div>
+
+    <div class="sidebar-bottom-row">
+      <button class="nav-item" id="btnLogoutSide" data-logout="1"></button>
+      <button class="nav-item" id="btnSettingsSide" data-nav="settings"></button>
+    </div>
+  </aside>
+</div>
+
+<div class="panel" id="ntfPanel"></div>
+<div class="scrim" id="scrim"><div id="scrimInner"></div></div>
+<div class="toasts" id="toasts"></div>
+
+<button class="chatbot-fab" id="chatbotToggle" aria-label="챗봇 열기"></button>
+<div class="chatbot-panel" id="chatbotPanel">
+  <div class="cursor-pet" id="cursorPet"><img src="/img/chatbot-lizard.png" alt=""></div>
+  <div class="chatbot-head">
+    <span class="chatbot-avatar" id="chatbotHeadAvatar"></span>
+    <div>
+      <div class="chatbot-title" id="chatbotTitle">챗봇</div>
+      <div class="chatbot-sub" id="chatbotSub">무엇이든 물어보세요</div>
+    </div>
+    <button class="icon-btn" id="chatbotClose" aria-label="닫기"></button>
+  </div>
+  <div class="chatbot-tabs" id="chatbotTabs">
+    <button class="chatbot-tab on" data-chatbot-tab="bot">챗봇</button>
+    <button class="chatbot-tab" data-chatbot-tab="dm">메시지<span class="chatbot-tab-badge" id="dmUnreadBadge" style="display:none"></span></button>
+    <button class="chatbot-tab" data-chatbot-tab="team">팀 채팅</button>
+  </div>
+  <div class="dm-thread-head" id="dmThreadHead"></div>
+  <div class="chatbot-messages" id="chatbotMessages"></div>
+  <div class="chatbot-input-row" id="chatbotInputRow">
+    <input class="input" id="chatbotInput" placeholder="메시지를 입력하세요">
+    <button class="btn btn-primary" id="chatbotSend">전송</button>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/icons.js"></script>
+<script src="/js/app.js"></script>
+<script src="/deliverables/deliverables.js"></script>
+</body>
+</html>

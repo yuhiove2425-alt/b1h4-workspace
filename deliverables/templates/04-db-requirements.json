@@ -1,0 +1,134 @@
+{
+  "id": "db-requirements",
+  "name": "2.1 데이터베이스 요구사항 분석서",
+  "desc": "요구사항 정의 · 객체 정의서 · E-R Diagram",
+  "icon": "wiki",
+  "source": "2.1._데이터베이스_요구사항_분석서.pdf",
+  "layout": {
+    "cover": {
+      "title": "데이터베이스\n요구사항 분석서",
+      "lines": [
+        {
+          "label": "주제명 :",
+          "key": "subject",
+          "multiline": true,
+          "fallback": "firstLine",
+          "keywords": [
+            "주제명",
+            "과제명"
+          ],
+          "maxLines": 2
+        },
+        {
+          "key": "coverDate",
+          "context": "today",
+          "placeholder": "발표회 날짜로 작성",
+          "keywords": [
+            "작성일",
+            "날짜"
+          ]
+        }
+      ]
+    },
+    "title": "데이터베이스 요구사항 분석서",
+    "columns": [
+      123,
+      359
+    ],
+    "rows": [
+      {
+        "h": 25,
+        "cells": [
+          {
+            "label": "작성일",
+            "span": 1
+          },
+          {
+            "key": "date",
+            "span": 1,
+            "context": "today",
+            "align": "left",
+            "keywords": [
+              "작성일",
+              "날짜",
+              "발표회날짜"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "1. 요구사항 정의서"
+      },
+      {
+        "h": 26,
+        "repeat": "requirements",
+        "minRows": 6,
+        "cells": [
+          {
+            "key": "no",
+            "span": 1,
+            "for": "번호",
+            "placeholder": "①"
+          },
+          {
+            "key": "text",
+            "span": 1,
+            "for": "요구사항",
+            "align": "left"
+          }
+        ]
+      },
+      {
+        "title": "2. 객체 정의서"
+      },
+      {
+        "h": 22,
+        "header": true,
+        "cells": [
+          {
+            "label": "객체 명",
+            "span": 1
+          },
+          {
+            "label": "속성 명",
+            "span": 1
+          }
+        ]
+      },
+      {
+        "h": 25,
+        "repeat": "objects",
+        "minRows": 6,
+        "cells": [
+          {
+            "key": "object",
+            "span": 1,
+            "for": "객체 명"
+          },
+          {
+            "key": "attribute",
+            "span": 1,
+            "for": "속성 명",
+            "align": "left",
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "title": "3. E-R Diagram"
+      },
+      {
+        "h": 220,
+        "cells": [
+          {
+            "key": "erd",
+            "span": 2,
+            "for": "E-R Diagram",
+            "multiline": true,
+            "placeholder": "다이어그램 설명을 적거나, 완성 후 이미지를 붙여 넣으세요."
+          }
+        ]
+      }
+    ]
+  }
+}

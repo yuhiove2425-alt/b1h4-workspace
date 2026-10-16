@@ -1,0 +1,407 @@
+{
+  "id": "bigdata-analysis",
+  "name": "2.3 빅데이터 분석 정의서",
+  "desc": "데이터 준비 · 전처리 · 분석 · 모델 · 검증",
+  "icon": "chart",
+  "source": "2.3._빅데이터_분석_정의서_(예시).pdf",
+  "layout": {
+    "cover": {
+      "title": "빅데이터 분석 정의서",
+      "lines": [
+        {
+          "label": "주제 :",
+          "key": "subject",
+          "multiline": true,
+          "fallback": "firstLine",
+          "keywords": [
+            "주제",
+            "아이디어 주제"
+          ],
+          "maxLines": 2
+        },
+        {
+          "key": "coverDate",
+          "context": "today",
+          "keywords": [
+            "작성일",
+            "날짜"
+          ]
+        }
+      ]
+    },
+    "title": "빅데이터 분석 정의서",
+    "columns": [
+      110,
+      372
+    ],
+    "rows": [
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "작성일",
+            "span": 1
+          },
+          {
+            "key": "date",
+            "span": 1,
+            "context": "today",
+            "align": "left",
+            "keywords": [
+              "작성일",
+              "날짜"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ⅰ. 개요"
+      },
+      {
+        "h": 30,
+        "cells": [
+          {
+            "label": "1. 아이디어 주제",
+            "span": 1
+          },
+          {
+            "key": "idea",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "아이디어 주제"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "2. 개발 목표",
+            "span": 1
+          },
+          {
+            "key": "goal",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "개발 목표"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 60,
+        "cells": [
+          {
+            "label": "3. 개발 내용",
+            "span": 1
+          },
+          {
+            "key": "content",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "개발 내용"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ⅱ. 기능별 빅데이터 분석 명세서"
+      },
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "기능명",
+            "span": 1
+          },
+          {
+            "key": "featureName",
+            "span": 1,
+            "align": "left",
+            "keywords": [
+              "기능명",
+              "기능"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "1. 데이터 준비"
+      },
+      {
+        "h": 30,
+        "cells": [
+          {
+            "label": "데이터 정의",
+            "span": 1
+          },
+          {
+            "key": "dataDefine",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "데이터 정의",
+              "데이터셋",
+              "사용 데이터"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "데이터 획득 방법",
+            "span": 1
+          },
+          {
+            "key": "dataSource",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "데이터 획득 방법",
+              "획득 방법",
+              "데이터 출처",
+              "데이터 획득",
+              "수집 방법",
+              "데이터 수집"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 50,
+        "cells": [
+          {
+            "label": "수집 데이터",
+            "span": 1
+          },
+          {
+            "key": "dataCollected",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "수집 데이터",
+              "수집데이터",
+              "데이터 구성",
+              "데이터 규모"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "2. 전처리"
+      },
+      {
+        "h": 70,
+        "cells": [
+          {
+            "label": "전처리 과정",
+            "span": 1
+          },
+          {
+            "key": "preprocess",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "전처리 과정",
+              "전처리",
+              "정제",
+              "결측치",
+              "데이터 가공"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. 데이터 분석"
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "데이터 분석 목표",
+            "span": 1
+          },
+          {
+            "key": "analysisGoal",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "데이터 분석 목표",
+              "분석 목표",
+              "분석 목적"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 110,
+        "cells": [
+          {
+            "label": "데이터 분석\n시나리오",
+            "span": 1
+          },
+          {
+            "key": "analysisScenario",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "데이터 분석 시나리오",
+              "분석 시나리오",
+              "분석 방법",
+              "분석 과정",
+              "feature"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 70,
+        "cells": [
+          {
+            "label": "데이터 분석 결과",
+            "span": 1
+          },
+          {
+            "key": "analysisResult",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "데이터 분석 결과",
+              "분석 결과",
+              "결과"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. 모델 생성 및 학습"
+      },
+      {
+        "h": 30,
+        "cells": [
+          {
+            "label": "모델링 목표",
+            "span": 1
+          },
+          {
+            "key": "modelGoal",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "모델링 목표",
+              "모델 목표"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "학습 모델",
+            "span": 1
+          },
+          {
+            "key": "modelName",
+            "span": 1,
+            "align": "left",
+            "keywords": [
+              "학습 모델",
+              "모델",
+              "알고리즘"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 60,
+        "cells": [
+          {
+            "label": "학습 방법",
+            "span": 1
+          },
+          {
+            "key": "modelMethod",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "학습 방법",
+              "학습",
+              "하이퍼파라미터",
+              "튜닝"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 80,
+        "cells": [
+          {
+            "label": "모델 예측 결과",
+            "span": 1
+          },
+          {
+            "key": "modelResult",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "모델 예측 결과",
+              "예측 결과",
+              "추론 결과"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. 검증 분석"
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "검증 방안",
+            "span": 1
+          },
+          {
+            "key": "validationPlan",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "검증 방안",
+              "검증 방법",
+              "평가 방법",
+              "평가 지표"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 80,
+        "cells": [
+          {
+            "label": "평가 결과",
+            "span": 1
+          },
+          {
+            "key": "validationResult",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "평가 결과",
+              "분석 평가 결과",
+              "성능",
+              "정확도",
+              "검증 결과"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

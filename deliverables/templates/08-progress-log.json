@@ -1,0 +1,255 @@
+{
+  "id": "progress-log",
+  "name": "3.2 프로젝트 진행일지",
+  "desc": "일별 진행상황 · 회의 내용 · 진척률",
+  "icon": "story",
+  "source": "3.2._프로젝트진행일지(예시).pdf",
+  "layout": {
+    "title": "프로젝트 진행일지",
+    "columns": [
+      79,
+      108,
+      110,
+      48,
+      22,
+      112
+    ],
+    "rows": [
+      {
+        "h": 19,
+        "cells": [
+          {
+            "label": "[프로젝트 명]",
+            "span": 1
+          },
+          {
+            "key": "projectName",
+            "span": 2,
+            "align": "left",
+            "context": "projectName",
+            "keywords": [
+              "프로젝트 명",
+              "프로젝트명"
+            ]
+          },
+          {
+            "label": "작성자",
+            "span": 1
+          },
+          {
+            "key": "author",
+            "span": 2,
+            "context": "author",
+            "keywords": [
+              "작성자"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 20,
+        "cells": [
+          {
+            "label": "",
+            "span": 1,
+            "head": false
+          },
+          {
+            "label": "",
+            "span": 2,
+            "head": false
+          },
+          {
+            "label": "날  짜",
+            "span": 1
+          },
+          {
+            "key": "date",
+            "span": 2,
+            "keywords": [
+              "날짜",
+              "날  짜",
+              "일자"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 19,
+        "cells": [
+          {
+            "label": "",
+            "span": 1,
+            "head": false
+          },
+          {
+            "label": "",
+            "span": 2,
+            "head": false
+          },
+          {
+            "label": "진척률",
+            "span": 1
+          },
+          {
+            "key": "progress",
+            "span": 2,
+            "keywords": [
+              "진척률",
+              "진행률"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 28,
+        "cells": [
+          {
+            "label": "팀 명",
+            "span": 1
+          },
+          {
+            "key": "teamName",
+            "span": 5,
+            "context": "teamName",
+            "keywords": [
+              "팀 명",
+              "팀명"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 30,
+        "header": true,
+        "cells": [
+          {
+            "label": "팀구성원",
+            "span": 1,
+            "rowSpanOf": "members"
+          },
+          {
+            "label": "이름",
+            "span": 1
+          },
+          {
+            "label": "역할",
+            "span": 4
+          }
+        ]
+      },
+      {
+        "h": 30,
+        "repeat": "members",
+        "minRows": 6,
+        "cells": [
+          {
+            "key": "name",
+            "span": 1,
+            "for": "이름",
+            "context": "roster"
+          },
+          {
+            "key": "role",
+            "span": 4,
+            "for": "역할",
+            "align": "left"
+          }
+        ],
+        "match": [
+          "팀구성원",
+          "참여인원",
+          "팀원",
+          "구성원"
+        ]
+      },
+      {
+        "h": 30,
+        "cells": [
+          {
+            "label": "일별 진행상황",
+            "span": 6
+          }
+        ]
+      },
+      {
+        "h": 30,
+        "header": true,
+        "cells": [
+          {
+            "label": "이름",
+            "span": 1
+          },
+          {
+            "label": "업 무 내 용",
+            "span": 4
+          },
+          {
+            "label": "특이사항",
+            "span": 1
+          }
+        ]
+      },
+      {
+        "h": 27,
+        "repeat": "daily",
+        "minRows": 6,
+        "cells": [
+          {
+            "key": "name",
+            "span": 1,
+            "for": "이름"
+          },
+          {
+            "key": "work",
+            "span": 4,
+            "for": "업 무 내 용",
+            "align": "left"
+          },
+          {
+            "key": "note",
+            "span": 1,
+            "for": "특이사항"
+          }
+        ],
+        "match": [
+          "일별 진행상황",
+          "계획 대비 실적",
+          "금일 실적",
+          "진행 내역",
+          "수행 업무"
+        ]
+      },
+      {
+        "h": 30,
+        "cells": [
+          {
+            "label": "회 의 내 용",
+            "span": 6
+          }
+        ]
+      },
+      {
+        "h": 320,
+        "cells": [
+          {
+            "key": "meeting",
+            "span": 6,
+            "for": "회 의 내 용",
+            "multiline": true,
+            "placeholder": "[안건 1]\n- \n[세부내용]\n 1.\n 2.",
+            "keywords": [
+              "회의 내용",
+              "회의",
+              "안건",
+              "논의",
+              "세부내용",
+              "협의"
+            ],
+            "catchAll": true
+          }
+        ]
+      }
+    ]
+  }
+}

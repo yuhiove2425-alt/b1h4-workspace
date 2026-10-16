@@ -1,0 +1,361 @@
+{
+  "id": "requirements",
+  "name": "1.3 요구사항 정의서",
+  "desc": "유스케이스 명세 · 기능 / 비기능 요구사항",
+  "icon": "list",
+  "source": "1.3._요구사항_정의서_(예시).pdf",
+  "layout": {
+    "cover": {
+      "title": "요구사항 정의서",
+      "lines": [
+        {
+          "label": "주제명 :",
+          "key": "subject",
+          "multiline": true,
+          "fallback": "firstLine",
+          "keywords": [
+            "주제명",
+            "과제명",
+            "시스템명"
+          ],
+          "maxLines": 2
+        },
+        {
+          "key": "coverDate",
+          "context": "today",
+          "keywords": [
+            "작성일",
+            "날짜"
+          ]
+        }
+      ]
+    },
+    "title": "요구사항 정의서",
+    "columns": [
+      85,
+      62,
+      65,
+      187,
+      77
+    ],
+    "rows": [
+      {
+        "h": 24,
+        "cells": [
+          {
+            "label": "작성일",
+            "span": 1
+          },
+          {
+            "key": "date",
+            "span": 1,
+            "context": "today",
+            "keywords": [
+              "작성일",
+              "날짜"
+            ]
+          },
+          {
+            "label": "작성자",
+            "span": 1
+          },
+          {
+            "key": "author",
+            "span": 2,
+            "context": "author",
+            "keywords": [
+              "작성자",
+              "담당자"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ⅰ. 개요"
+      },
+      {
+        "h": 90,
+        "cells": [
+          {
+            "label": "1. 문서의 목적",
+            "span": 1
+          },
+          {
+            "key": "purpose",
+            "span": 4,
+            "multiline": true,
+            "keywords": [
+              "문서의 목적",
+              "목적"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 45,
+        "cells": [
+          {
+            "label": "2. 요구사항 및\n문서의 범위",
+            "span": 1
+          },
+          {
+            "key": "scope",
+            "span": 4,
+            "multiline": true,
+            "keywords": [
+              "문서의 범위",
+              "요구사항 및 문서의 범위",
+              "범위"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ⅱ. 유스케이스 명세"
+      },
+      {
+        "h": 22,
+        "repeat": "usecases",
+        "block": true,
+        "minRows": 1,
+        "cells": [
+          {
+            "label": "유스케이스 이름",
+            "span": 1
+          },
+          {
+            "key": "name",
+            "span": 4,
+            "for": "유스케이스 이름",
+            "align": "left"
+          }
+        ]
+      },
+      {
+        "h": 22,
+        "repeat": "usecases",
+        "block": true,
+        "cells": [
+          {
+            "label": "유스케이스 ID",
+            "span": 1
+          },
+          {
+            "key": "id",
+            "span": 4,
+            "for": "유스케이스 ID",
+            "align": "left"
+          }
+        ]
+      },
+      {
+        "h": 30,
+        "repeat": "usecases",
+        "block": true,
+        "cells": [
+          {
+            "label": "관련 요구사항",
+            "span": 1
+          },
+          {
+            "key": "related",
+            "span": 4,
+            "for": "관련 요구사항",
+            "align": "left"
+          }
+        ]
+      },
+      {
+        "h": 22,
+        "repeat": "usecases",
+        "block": true,
+        "cells": [
+          {
+            "label": "우선순위",
+            "span": 1
+          },
+          {
+            "key": "priority",
+            "span": 4,
+            "for": "우선순위",
+            "align": "left"
+          }
+        ]
+      },
+      {
+        "h": 22,
+        "repeat": "usecases",
+        "block": true,
+        "cells": [
+          {
+            "label": "선행조건",
+            "span": 1
+          },
+          {
+            "key": "pre",
+            "span": 4,
+            "for": "선행조건",
+            "align": "left"
+          }
+        ]
+      },
+      {
+        "h": 22,
+        "repeat": "usecases",
+        "block": true,
+        "cells": [
+          {
+            "label": "관련 액터",
+            "span": 1
+          },
+          {
+            "key": "actor",
+            "span": 4,
+            "for": "관련 액터",
+            "align": "left"
+          }
+        ]
+      },
+      {
+        "h": 90,
+        "repeat": "usecases",
+        "block": true,
+        "cells": [
+          {
+            "label": "이벤트 흐름",
+            "span": 1
+          },
+          {
+            "key": "flow",
+            "span": 4,
+            "for": "이벤트 흐름",
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "h": 22,
+        "repeat": "usecases",
+        "block": true,
+        "cells": [
+          {
+            "label": "종료조건",
+            "span": 1
+          },
+          {
+            "key": "end",
+            "span": 4,
+            "for": "종료조건",
+            "align": "left"
+          }
+        ]
+      },
+      {
+        "title": "Ⅲ. 기능 요구사항"
+      },
+      {
+        "h": 20,
+        "header": true,
+        "cells": [
+          {
+            "label": "ID",
+            "span": 1
+          },
+          {
+            "label": "요구사항 명칭",
+            "span": 2
+          },
+          {
+            "label": "설명",
+            "span": 1
+          },
+          {
+            "label": "우선순위",
+            "span": 1
+          }
+        ]
+      },
+      {
+        "h": 34,
+        "repeat": "functional",
+        "minRows": 6,
+        "cells": [
+          {
+            "key": "id",
+            "span": 1,
+            "for": "ID"
+          },
+          {
+            "key": "name",
+            "span": 2,
+            "for": "요구사항 명칭"
+          },
+          {
+            "key": "detail",
+            "span": 1,
+            "for": "설명",
+            "multiline": true
+          },
+          {
+            "key": "priority",
+            "span": 1,
+            "for": "우선순위"
+          }
+        ]
+      },
+      {
+        "title": "Ⅳ. 비기능 요구사항"
+      },
+      {
+        "h": 20,
+        "header": true,
+        "cells": [
+          {
+            "label": "ID",
+            "span": 1
+          },
+          {
+            "label": "요구사항 명칭",
+            "span": 2
+          },
+          {
+            "label": "설명",
+            "span": 1
+          },
+          {
+            "label": "적용시점",
+            "span": 1
+          }
+        ]
+      },
+      {
+        "h": 30,
+        "repeat": "nonFunctional",
+        "minRows": 4,
+        "cells": [
+          {
+            "key": "id",
+            "span": 1,
+            "for": "ID"
+          },
+          {
+            "key": "name",
+            "span": 2,
+            "for": "요구사항 명칭"
+          },
+          {
+            "key": "detail",
+            "span": 1,
+            "for": "설명",
+            "multiline": true
+          },
+          {
+            "key": "when",
+            "span": 1,
+            "for": "적용시점"
+          }
+        ]
+      }
+    ]
+  }
+}

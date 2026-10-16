@@ -1,0 +1,46 @@
+{
+  "id": "wbs",
+  "name": "3.1 WBS",
+  "desc": "작업 분해 · 일정 · 담당자 · 달성율",
+  "icon": "sprint",
+  "source": "3.1._WBS_2025_사업명_과정명실전_회의록_팀장명팀(팀명).xlsx",
+  "layout": {
+    "title": "WBS (작업 분해 구조)",
+    "columns": [70, 80, 130, 55, 55, 45, 45, 50],
+    "rows": [
+      { "h": 24, "cells": [
+        { "label": "사업명 / 과정명", "span": 2 },
+        { "key": "subject", "span": 3, "align": "left", "fallback": "firstLine", "keywords": ["사업명", "과정명", "과제명"] },
+        { "label": "팀명", "span": 1 },
+        { "key": "teamName", "span": 2, "context": "teamName", "keywords": ["팀명", "팀 명"] }
+      ]},
+      { "h": 24, "cells": [
+        { "label": "작성자", "span": 2 },
+        { "key": "author", "span": 3, "align": "left", "context": "author", "keywords": ["작성자", "팀장"] },
+        { "label": "최종 작성일", "span": 1 },
+        { "key": "date", "span": 2, "context": "today", "keywords": ["최종 작성일", "작성일"] }
+      ]},
+
+      { "h": 22, "header": true, "cells": [
+        { "label": "대분류", "span": 1 },
+        { "label": "중분류", "span": 1 },
+        { "label": "내용", "span": 1 },
+        { "label": "시작 날짜", "span": 1 },
+        { "label": "예상 완료일", "span": 1 },
+        { "label": "소요 기간", "span": 1 },
+        { "label": "달성율", "span": 1 },
+        { "label": "담당자", "span": 1 }
+      ]},
+      { "h": 24, "repeat": "tasks", "minRows": 10, "cells": [
+        { "key": "major", "span": 1, "for": "대분류" },
+        { "key": "middle", "span": 1, "for": "중분류" },
+        { "key": "content", "span": 1, "for": "내용", "align": "left" },
+        { "key": "start", "span": 1, "for": "시작 날짜" },
+        { "key": "planEnd", "span": 1, "for": "예상 완료일" },
+        { "key": "period", "span": 1, "for": "소요 기간" },
+        { "key": "rate", "span": 1, "for": "달성율" },
+        { "key": "owner", "span": 1, "for": "담당자" }
+      ]}
+    ]
+  }
+}

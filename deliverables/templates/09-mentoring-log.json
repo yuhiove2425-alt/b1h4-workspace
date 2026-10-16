@@ -1,0 +1,196 @@
+{
+  "id": "mentoring-log",
+  "name": "3.3 멘토링 일지",
+  "desc": "멘토링 진행 내용 · 요약 · 준비사항",
+  "icon": "comment",
+  "source": "3.3._멘토링일지_양식.xlsx",
+  "layout": {
+    "title": "멘 토 링 일 지",
+    "columns": [
+      110,
+      120,
+      100,
+      152
+    ],
+    "rows": [
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "교 육 명",
+            "span": 1
+          },
+          {
+            "key": "course",
+            "span": 3,
+            "align": "left",
+            "keywords": [
+              "교육명",
+              "교 육 명"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "트 랙 명",
+            "span": 1
+          },
+          {
+            "key": "track",
+            "span": 3,
+            "align": "left",
+            "keywords": [
+              "트랙명",
+              "트 랙 명"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "멘토링 진행일",
+            "span": 1
+          },
+          {
+            "key": "date",
+            "span": 1,
+            "context": "today",
+            "keywords": [
+              "멘토링 진행일",
+              "진행일"
+            ]
+          },
+          {
+            "label": "멘토링 시간",
+            "span": 1
+          },
+          {
+            "key": "time",
+            "span": 1,
+            "keywords": [
+              "멘토링 시간",
+              "시간"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "멘 토",
+            "span": 1
+          },
+          {
+            "key": "mentor",
+            "span": 1,
+            "keywords": [
+              "멘토",
+              "멘토명"
+            ]
+          },
+          {
+            "label": "멘티 (교육생)",
+            "span": 1
+          },
+          {
+            "key": "mentee",
+            "span": 1,
+            "context": "author",
+            "keywords": [
+              "멘티",
+              "교육생"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "멘 토 링   진 행 내 용",
+            "span": 4
+          }
+        ]
+      },
+      {
+        "h": 240,
+        "cells": [
+          {
+            "key": "content",
+            "span": 4,
+            "for": "멘토링 진행 내용",
+            "multiline": true,
+            "catchAll": true
+          }
+        ]
+      },
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "멘토링 내용 요약",
+            "span": 4
+          }
+        ]
+      },
+      {
+        "h": 110,
+        "cells": [
+          {
+            "key": "summary",
+            "span": 4,
+            "for": "멘토링 내용 요약",
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "다음 멘토링 준비사항",
+            "span": 4
+          }
+        ]
+      },
+      {
+        "h": 90,
+        "cells": [
+          {
+            "key": "next",
+            "span": 4,
+            "for": "다음 멘토링 준비사항",
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "활동 증빙 (이미지 캡처 등)",
+            "span": 4
+          }
+        ]
+      },
+      {
+        "h": 180,
+        "cells": [
+          {
+            "key": "evidence",
+            "span": 4,
+            "for": "활동 증빙",
+            "multiline": true,
+            "placeholder": "캡처 이미지는 저장한 파일에 직접 붙여 넣으세요."
+          }
+        ]
+      }
+    ]
+  }
+}

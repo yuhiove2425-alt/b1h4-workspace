@@ -1,0 +1,307 @@
+{
+  "id": "screen-design",
+  "name": "2.2 화면 설계서",
+  "desc": "표지 · 변경이력 · 화면별 설계",
+  "icon": "board",
+  "source": "2.2._화면_설계서.pptx",
+  "layout": {
+    "cover": {
+      "title": "화면설계서",
+      "lines": [
+        {
+          "label": "과제명 :",
+          "key": "subject",
+          "fallback": "firstLine",
+          "keywords": [
+            "과제명",
+            "주제명",
+            "프로젝트명"
+          ],
+          "maxLines": 2
+        },
+        {
+          "label": "부제 :",
+          "key": "subtitle2",
+          "keywords": [
+            "부제"
+          ]
+        },
+        {
+          "label": "팀명 :",
+          "key": "coverTeam",
+          "context": "teamName",
+          "keywords": [
+            "팀명"
+          ]
+        },
+        {
+          "label": "팀원 :",
+          "key": "coverMembers",
+          "keywords": [
+            "팀원",
+            "구성원"
+          ]
+        },
+        {
+          "key": "coverDate",
+          "context": "today",
+          "keywords": [
+            "작성일",
+            "날짜"
+          ]
+        }
+      ]
+    },
+    "title": "화면설계서",
+    "columns": [
+      95,
+      120,
+      100,
+      165
+    ],
+    "rows": [
+      {
+        "h": 26,
+        "cells": [
+          {
+            "label": "팀명",
+            "span": 1
+          },
+          {
+            "key": "teamName",
+            "span": 1,
+            "context": "teamName",
+            "keywords": [
+              "팀명",
+              "팀 명"
+            ]
+          },
+          {
+            "label": "작성일",
+            "span": 1
+          },
+          {
+            "key": "date",
+            "span": 1,
+            "context": "today",
+            "keywords": [
+              "작성일",
+              "날짜"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "팀원",
+            "span": 1
+          },
+          {
+            "key": "members",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "팀원",
+              "구성원"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "변경 이력"
+      },
+      {
+        "h": 20,
+        "header": true,
+        "cells": [
+          {
+            "label": "버전",
+            "span": 1
+          },
+          {
+            "label": "작성일자",
+            "span": 1
+          },
+          {
+            "label": "수정사항",
+            "span": 1
+          },
+          {
+            "label": "작성자 / 검수자",
+            "span": 1
+          }
+        ]
+      },
+      {
+        "h": 26,
+        "repeat": "history",
+        "minRows": 4,
+        "cells": [
+          {
+            "key": "version",
+            "span": 1,
+            "for": "버전"
+          },
+          {
+            "key": "date",
+            "span": 1,
+            "for": "작성일자"
+          },
+          {
+            "key": "change",
+            "span": 1,
+            "for": "수정사항",
+            "align": "left",
+            "multiline": true
+          },
+          {
+            "key": "author",
+            "span": 1,
+            "for": "작성자"
+          }
+        ]
+      },
+      {
+        "title": "메뉴 구성"
+      },
+      {
+        "h": 90,
+        "cells": [
+          {
+            "key": "menu",
+            "span": 4,
+            "for": "메뉴 구성",
+            "multiline": true,
+            "placeholder": "메인화면 / 로그인 / 회원가입 …"
+          }
+        ]
+      },
+      {
+        "title": "화면별 설계"
+      },
+      {
+        "h": 24,
+        "repeat": "screens",
+        "block": true,
+        "minRows": 1,
+        "cells": [
+          {
+            "label": "화면 ID",
+            "span": 1
+          },
+          {
+            "key": "id",
+            "span": 1,
+            "for": "화면 ID"
+          },
+          {
+            "label": "화면이름",
+            "span": 1
+          },
+          {
+            "key": "name",
+            "span": 1,
+            "for": "화면이름"
+          }
+        ]
+      },
+      {
+        "h": 24,
+        "repeat": "screens",
+        "block": true,
+        "cells": [
+          {
+            "label": "관련 유스케이스 ID",
+            "span": 1
+          },
+          {
+            "key": "usecase",
+            "span": 1,
+            "for": "관련 유스케이스 ID"
+          },
+          {
+            "label": "작성자",
+            "span": 1
+          },
+          {
+            "key": "author",
+            "span": 1,
+            "for": "작성자"
+          }
+        ]
+      },
+      {
+        "h": 24,
+        "repeat": "screens",
+        "block": true,
+        "cells": [
+          {
+            "label": "메뉴경로",
+            "span": 1
+          },
+          {
+            "key": "path",
+            "span": 3,
+            "for": "메뉴경로",
+            "align": "left"
+          }
+        ]
+      },
+      {
+        "h": 44,
+        "repeat": "screens",
+        "block": true,
+        "cells": [
+          {
+            "label": "화면개요",
+            "span": 1
+          },
+          {
+            "key": "overview",
+            "span": 3,
+            "for": "화면개요",
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "h": 110,
+        "repeat": "screens",
+        "block": true,
+        "cells": [
+          {
+            "label": "기능 설명\n(사용자 액션 /\n동작 결과)",
+            "span": 1
+          },
+          {
+            "key": "detail",
+            "span": 3,
+            "for": "기능 설명",
+            "multiline": true,
+            "placeholder": "- 어떤 기능(동작)인지\n- 사용자 액션(Input)\n- 액션의 세부 내용\n- 액션에 따른 기능(Output)"
+          }
+        ]
+      },
+      {
+        "h": 160,
+        "repeat": "screens",
+        "block": true,
+        "cells": [
+          {
+            "label": "화면",
+            "span": 1
+          },
+          {
+            "key": "image",
+            "span": 3,
+            "for": "화면",
+            "multiline": true,
+            "placeholder": "설계한 화면을 이 자리에 넣어주세요."
+          }
+        ]
+      }
+    ]
+  }
+}

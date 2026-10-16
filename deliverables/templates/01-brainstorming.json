@@ -1,0 +1,287 @@
+{
+  "id": "brainstorming",
+  "name": "1.1 브레인 스토밍",
+  "desc": "팀 주제 후보와 타겟 · 차별성 정리",
+  "icon": "epic",
+  "source": "1.1._브레인_스토밍_(예시).pdf",
+  "layout": {
+    "title": "브레인 스토밍",
+    "columns": [
+      56,
+      35,
+      33,
+      60,
+      234
+    ],
+    "rows": [
+      {
+        "h": 27,
+        "cells": [
+          {
+            "label": "팀명",
+            "span": 2
+          },
+          {
+            "key": "teamName",
+            "span": 3,
+            "context": "teamName",
+            "keywords": [
+              "팀명",
+              "팀 명"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "팀원",
+            "span": 2
+          },
+          {
+            "key": "members",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "팀원",
+              "구성원"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "프로젝트\n방향성",
+            "span": 2
+          },
+          {
+            "key": "direction",
+            "span": 3,
+            "multiline": true,
+            "keywords": [
+              "프로젝트 방향성",
+              "방향성"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 23,
+        "cells": [
+          {
+            "label": "주제 1",
+            "span": 1
+          },
+          {
+            "key": "topic1",
+            "span": 4,
+            "keywords": [
+              "주제 1",
+              "주제1"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "제안자",
+            "span": 1
+          },
+          {
+            "key": "proposer1",
+            "span": 2,
+            "keywords": [
+              "제안자"
+            ]
+          },
+          {
+            "label": "타겟",
+            "span": 1
+          },
+          {
+            "key": "target1",
+            "span": 1,
+            "multiline": true,
+            "keywords": [
+              "타겟"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "차별성",
+            "span": 1
+          },
+          {
+            "key": "difference1",
+            "span": 4,
+            "multiline": true,
+            "keywords": [
+              "차별성"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 44,
+        "cells": [
+          {
+            "label": "구현 목표",
+            "span": 1
+          },
+          {
+            "key": "goal1",
+            "span": 4,
+            "multiline": true,
+            "keywords": [
+              "구현 목표",
+              "구현목표"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 23,
+        "cells": [
+          {
+            "label": "주제 2",
+            "span": 1
+          },
+          {
+            "key": "topic2",
+            "span": 4,
+            "keywords": [
+              "주제 2",
+              "주제2"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "제안자",
+            "span": 1
+          },
+          {
+            "key": "proposer2",
+            "span": 2
+          },
+          {
+            "label": "타겟",
+            "span": 1
+          },
+          {
+            "key": "target2",
+            "span": 1,
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "차별성",
+            "span": 1
+          },
+          {
+            "key": "difference2",
+            "span": 4,
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "h": 47,
+        "cells": [
+          {
+            "label": "구현 목표",
+            "span": 1
+          },
+          {
+            "key": "goal2",
+            "span": 4,
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "h": 23,
+        "cells": [
+          {
+            "label": "주제 3",
+            "span": 1
+          },
+          {
+            "key": "topic3",
+            "span": 4,
+            "keywords": [
+              "주제 3",
+              "주제3"
+            ]
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "제안자",
+            "span": 1
+          },
+          {
+            "key": "proposer3",
+            "span": 2
+          },
+          {
+            "label": "타겟",
+            "span": 1
+          },
+          {
+            "key": "target3",
+            "span": 1,
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "h": 40,
+        "cells": [
+          {
+            "label": "차별성",
+            "span": 1
+          },
+          {
+            "key": "difference3",
+            "span": 4,
+            "multiline": true
+          }
+        ]
+      },
+      {
+        "h": 44,
+        "cells": [
+          {
+            "label": "구현 목표",
+            "span": 1
+          },
+          {
+            "key": "goal3",
+            "span": 4,
+            "multiline": true
+          }
+        ]
+      }
+    ]
+  }
+}

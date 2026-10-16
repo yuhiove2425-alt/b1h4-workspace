@@ -1,0 +1,13 @@
+node_modules/
+.env
+data/db.json
+data/backup-*.json
+data/*.tmp
+*.bak
+.claude/
+tunnel.log
+cloudflared.exe
+.session-secret
+data/*.broken-*
+deliverables/data/
+deliverables/templates/samples/
